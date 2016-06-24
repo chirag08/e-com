@@ -1,0 +1,17 @@
+<div id="products" class="ecom-div show">
+	<%= render 'products' %>	
+</div>
+
+<div id="cart" class="ecom-div hidden">
+	<%= render 'cart' %>	
+</div>
+
+<div id="success" class="ecom-div hidden">
+	<%= render 'success' %>	
+</div>
+
+<script>
+	<%if !@page_js.nil?%>
+		<%=render :template=>@page_js %>
+	<% end %>
+</script>

@@ -1,0 +1,95 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <p class="lead">E-Commerce App</p>
+            <div class="list-group">
+                <% @data.keys.each do |category|%>
+                    <%= link_to "#{category}",'#',class: "list-group-item",:onclick => 'func(this.text)' %>
+                <% end %>
+            </div>
+            <p>Filters</p>
+            <div class="checkbox">
+                <%= link_to 'Sort by Price',sort_price_path,class: 'btn btn-default' %>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="alert alert-success hidden" id='cart_success'>
+              <strong>Success!</strong> Item Succesfully added to cart
+            </div>
+            <div class="row carousel-holder">
+
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <% @data.keys.each do |category|%>
+                <div class="row items" id=<%= category %> >
+                <% @data[category].each do |item| %>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">Rs. <%= item["price"] %></h4>
+                                <h4><a href="#"><%= item["name"] %></a>
+                                </h4>
+                                <p><%= item["desc"]%>.</p>
+                            </div>
+                            <div class="cart-div">
+                                <p class="pull-right">
+                                    <div><%= link_to "Add to cart",add_to_cart_path(item["id"]),:remote => true,class: 'btn btn-primary pull-left' %></div>
+                                    <div><%= link_to "Buy Now",add_to_cart_path(item["id"]),:remote => true,class: 'btn btn-success' %></div>
+                                
+                                </p>
+                                    
+                                
+                            </div>
+                        </div>
+                    </div> 
+                    <% end %>
+                </div>
+            <% end %>    
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $('.items').addClass('hidden');
+    a='<%= @data.keys[0] %>'
+    $('#'+ a).removeClass('hidden');
+    function func(text) {
+        id = text
+        $('.items').addClass('hidden');
+        $('#'+id).removeClass('hidden');
+              
+    }   
+
+</script>

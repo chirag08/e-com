@@ -1,0 +1,98 @@
+{
+  "Electronics":[
+      {
+        "id": 12,
+        "name": "Hp Laptop",
+        "price": 250,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 13,
+        "name": "Dell Laptop",
+        "price": 6000,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 14,
+        "name": "Lenovo Laptop",
+        "price": 5000,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 15,
+        "name": "Apple Laptop",
+        "price": 4056,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 16,
+        "name": "Asus Laptop",
+        "price": 3000,
+        "desc": "kjashkjsf dskjfh"
+      }
+    ],
+    "Clothes":[
+      {
+        "id": 12,
+        "name": "Hp Laptop",
+        "price": 250,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 13,
+        "name": "Dell Laptop",
+        "price": 6000,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 14,
+        "name": "Lenovo Laptop",
+        "price": 5000,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 15,
+        "name": "Apple Laptop",
+        "price": 4056,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 16,
+        "name": "Asus Laptop",
+        "price": 3000,
+        "desc": "kjashkjsf dskjfh"
+      }
+    ],
+    "Books":[
+      {
+        "id": 12,
+        "name": "Hp Laptop",
+        "price": 250,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 13,
+        "name": "Dell Laptop",
+        "price": 6000,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 14,
+        "name": "Lenovo Laptop",
+        "price": 5000,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 15,
+        "name": "Apple Laptop",
+        "price": 4056,
+        "desc": "kjashkjsf dskjfh"
+      },
+      {
+        "id": 16,
+        "name": "Asus Laptop",
+        "price": 3000,
+        "desc": "kjashkjsf dskjfh"
+      }
+    ]
+}

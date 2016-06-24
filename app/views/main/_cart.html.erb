@@ -1,0 +1,93 @@
+<style type="text/css">
+	#loginModal {
+		top:5%;
+		left:50%;
+		outline: none;
+	}
+
+	#loginModal .modal-dialog  {width:75%;}
+</style>
+<h1>Shopping Cart</h1>
+
+<% items = cookies[:products].split(',') %>
+<div class="shopping-cart">
+	<div class="column-labels">
+		<label class="product-image">Image</label>
+		<label class="product-details">Product</label>
+		<label class="product-price">Price</label>
+		<label class="product-quantity">Quantity</label>
+		<label class="product-removal">Remove</label>
+		<label class="product-line-price">Total</label>
+	</div>
+	<% items.each do |item| %>
+		<% item=search_item(@data,item) %>
+		<div class="product">
+			<div class="product-image">
+				<img src="http://s.cdpn.io/3/dingo-dog-bones.jpg">
+			</div>
+			<div class="product-details">
+				<div class="product-title"><%= item["name"] %></div>
+				<p class="product-description"><%= item["desc"] %>.</p>
+			</div>
+			<div class="product-price"><%= item["price"] %></div>
+			<div class="product-quantity">
+				<input type="number" value="1" min="1">
+			</div>
+			<div class="product-removal">
+				<button class="btn btn-danger">
+					Remove
+				</button>
+			</div>
+			<div class="product-line-price"><%= item["price"] %></div>
+		</div>
+	<% end %>
+
+	<div class="totals">
+		<div class="totals-item">
+			<label>Subtotal</label>
+			<div class="totals-value" id="cart-subtotal">71.97</div>
+		</div>
+		<div class="totals-item">
+			<label>Tax (5%)</label>
+			<div class="totals-value" id="cart-tax">3.60</div>
+		</div>
+		<div class="totals-item">
+			<label>Shipping</label>
+			<div class="totals-value" id="cart-shipping">15.00</div>
+		</div>
+		<div class="totals-item totals-item-total">
+			<label>Grand Total</label>
+			<div class="totals-value" id="cart-total">90.57</div>
+		</div>
+	</div>
+	<%= link_to "Checkout" ,'#' ,class: "btn btn-info btn-lg pull-right",'data-toggle'=> "modal" ,'data-target'=>"#loginModal"%>
+
+</div>
+
+<!-- Modal -->
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body">
+				<%= form_tag login_path do %>
+				<div class="pull-left">
+					<%=label_tag 'email' %>
+					<%=email_field_tag 'email'%>
+				</div>
+				<div class="pull-right">
+					<%=label_tag 'password' %>
+					<%=password_field_tag 'password'%>
+				</div><br>
+				<div class="col-md-6 col-md-offset-3"><%= submit_tag 'Complete Order',class: 'btn btn-info' %></div>
+				<% end %>
+			</div>
+		</div>
+
+	</div>
+</div>
