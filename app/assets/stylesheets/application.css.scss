@@ -65,19 +65,7 @@ body {
 footer {
     margin: 50px 0;
 }
-
-.navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    color: BLUE;
-
-}
-
-.navbar-nav li a:hover {
-    color: #1abc9c !important;
+.navbar-inverse {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
 }

@@ -20,7 +20,27 @@ class MainController < ApplicationController
 
 	def login
 		puts params
-		redirect_to app_path(div: 'success')	
+		@login = File.read("#{Rails.root}/public/credential.json")
+		@login = JSON.parse @login
+		flag = 0
+		@login["credentials"].each do |t|
+			if t["username"] == params[:username]
+				puts "in user"
+				puts "#{t["username"]}"
+				if t["password"] == params[:password]
+					puts "in psw"
+					puts "#{t["password"]}"
+					flag = 1
+					break
+				end
+			end
+		end	
+		cookies.delete :products
+		if flag
+			redirect_to app_path(div: 'success')
+		else
+			redirect_to app_path(div: 'cart')
+		end
 	end
 
 	def add_to_cart
@@ -38,6 +58,7 @@ class MainController < ApplicationController
 	end
 
 	def sort_price
+		puts params
 		@data = File.read("#{Rails.root}/public/categories.json")
 		@data = JSON.parse @data
 		 @data.keys.each do |key|

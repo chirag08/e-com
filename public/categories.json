@@ -4,95 +4,68 @@
         "id": 12,
         "name": "Hp Laptop",
         "price": 250,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://ecx.images-amazon.com/images/I/41oRyFR9-PL._AC_SY200_.jpg"
       },
       {
         "id": 13,
         "name": "Dell Laptop",
         "price": 6000,
-        "desc": "kjashkjsf dskjfh"
-      },
-      {
-        "id": 14,
-        "name": "Lenovo Laptop",
-        "price": 5000,
-        "desc": "kjashkjsf dskjfh"
-      },
-      {
-        "id": 15,
-        "name": "Apple Laptop",
-        "price": 4056,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://ecx.images-amazon.com/images/I/41oRyFR9-PL._AC_SY200_.jpg"
       },
       {
         "id": 16,
         "name": "Asus Laptop",
         "price": 3000,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://ecx.images-amazon.com/images/I/41oRyFR9-PL._AC_SY200_.jpg"
       }
     ],
     "Clothes":[
       {
-        "id": 12,
+        "id": 11,
         "name": "Hp Laptop",
         "price": 250,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://n1.sdlcdn.com/imgs/b/2/n/198x232/Benoit-Black-Round-T-Shirt-SDL269580176-1-6bc32.jpg"
       },
       {
-        "id": 13,
+        "id": 18,
         "name": "Dell Laptop",
         "price": 6000,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://n1.sdlcdn.com/imgs/b/c/6/198x232/John-Players-Grey-Polo-Neck-SDL262503887-1-b5dee.jpg"
       },
       {
-        "id": 14,
-        "name": "Lenovo Laptop",
-        "price": 5000,
-        "desc": "kjashkjsf dskjfh"
-      },
-      {
-        "id": 15,
-        "name": "Apple Laptop",
-        "price": 4056,
-        "desc": "kjashkjsf dskjfh"
-      },
-      {
-        "id": 16,
+        "id": 19,
         "name": "Asus Laptop",
         "price": 3000,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://n3.sdlcdn.com/imgs/a/2/p/198x232/John-Players-White-Round-Neck-SDL962145777-1-ac3ba.jpg"
       }
     ],
     "Books":[
       {
-        "id": 12,
+        "id": 111,
         "name": "Hp Laptop",
         "price": 250,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img":"https://images-na.ssl-images-amazon.com/images/I/51a8hYsdqTL._AA135_.jpg"
       },
       {
-        "id": 13,
+        "id": 133,
         "name": "Dell Laptop",
         "price": 6000,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "https://images-eu.ssl-images-amazon.com/images/I/9100hfUg+zL._AA150_.jpg"
       },
       {
-        "id": 14,
-        "name": "Lenovo Laptop",
-        "price": 5000,
-        "desc": "kjashkjsf dskjfh"
-      },
-      {
-        "id": 15,
-        "name": "Apple Laptop",
-        "price": 4056,
-        "desc": "kjashkjsf dskjfh"
-      },
-      {
-        "id": 16,
-        "name": "Asus Laptop",
+        "id": 343,
+        "name": "Charlie",
         "price": 3000,
-        "desc": "kjashkjsf dskjfh"
+        "desc": "kjashkjsf dskjfh",
+        "img": "http://ecx.images-amazon.com/images/I/51H6WSK39SL._AC_US240_QL65_.jpg"
       }
     ]
 }
